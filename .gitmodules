@@ -1,0 +1,3 @@
+[submodule "themes/Monochrome"]
+	path = themes/Monochrome
+	url = https://github.com/kaiiiz/hugo-theme-monochrome.git
