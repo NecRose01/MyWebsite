@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on MyWebsite</title>
+    <link>https://NecRose01.github.io/MyWebsite/tags/java/</link>
+    <description>Recent content in Java on MyWebsite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://NecRose01.github.io/MyWebsite/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cách Cài Java và JavaScript</title>
+      <link>https://NecRose01.github.io/MyWebsite/posts/cachcaidatjavajavascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://NecRose01.github.io/MyWebsite/posts/cachcaidatjavajavascript/</guid>
+      <description>&lt;p&gt;Để bắt đầu lập trình với &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt;, bạn cần cài đặt các công cụ cần thiết. Dưới đây là hướng dẫn chi tiết về cách cài đặt Java và JavaScript trên các hệ điều hành phổ biến: Windows, macOS và Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Câu Lệnh If-Else Trong Java</title>
+      <link>https://NecRose01.github.io/MyWebsite/posts/if-else-loop/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://NecRose01.github.io/MyWebsite/posts/if-else-loop/</guid>
+      <description>&lt;p&gt;Trong Java, câu lệnh &lt;code&gt;if-else&lt;/code&gt; là một cấu trúc điều kiện phổ biến, cho phép thực thi mã dựa trên kết quả của một điều kiện logic.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java Trong Năm 2024: Những Đổi Mới Và Tiềm Năng</title>
+      <link>https://NecRose01.github.io/MyWebsite/posts/javavaungdungnam2024/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://NecRose01.github.io/MyWebsite/posts/javavaungdungnam2024/</guid>
+      <description>&lt;p&gt;Java đã và đang giữ vững vị trí là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới. Mặc dù có sự cạnh tranh từ các ngôn ngữ khác như Python, JavaScript và C++, Java vẫn tiếp tục phát triển mạnh mẽ trong năm 2024. Vậy Java trong năm 2024 có gì mới và tại sao nó vẫn là sự lựa chọn hàng đầu của các lập trình viên?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>So Sánh Giữa Java và Một Số Ngôn Ngữ Khác</title>
+      <link>https://NecRose01.github.io/MyWebsite/posts/java-and-other-languages/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://NecRose01.github.io/MyWebsite/posts/java-and-other-languages/</guid>
+      <description>&lt;p&gt;Java là một trong những ngôn ngữ lập trình phổ biến nhất, được sử dụng rộng rãi trong phát triển phần mềm và ứng dụng web. Tuy nhiên, trong lĩnh vực lập trình, còn rất nhiều ngôn ngữ khác như Python, C++, và JavaScript cũng có những đặc điểm riêng. Trong bài viết này, chúng ta sẽ so sánh Java với một số ngôn ngữ lập trình phổ biến.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,531 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://NecRose01.github.io/MyWebsite/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Các Phương Thức Cơ Bản Trong JavaScript - MyWebsite</title>
+
+    
+    <meta name="description" content="Tìm hiểu về các phương thức cơ bản trong JavaScript giúp bạn thao tác với chuỗi, mảng và đối tượng hiệu quả hơn." />
+    
+
+    
+
+    
+    <meta name="author" content="Hugo Authors" />
+    
+
+    
+        <meta property="og:url" content="https://NecRose01.github.io/MyWebsite/posts/variable-in-javascript/">
+  <meta property="og:site_name" content="MyWebsite">
+  <meta property="og:title" content="Các Phương Thức Cơ Bản Trong JavaScript">
+  <meta property="og:description" content="Tìm hiểu về các phương thức cơ bản trong JavaScript giúp bạn thao tác với chuỗi, mảng và đối tượng hiệu quả hơn.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-30T22:49:44+07:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Phương Thức">
+    <meta property="article:tag" content="Lập Trình Web">
+
+    
+
+    
+        
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Các Phương Thức Cơ Bản Trong JavaScript">
+  <meta name="twitter:description" content="Tìm hiểu về các phương thức cơ bản trong JavaScript giúp bạn thao tác với chuỗi, mảng và đối tượng hiệu quả hơn.">
+
+    <link rel="stylesheet" href="/MyWebsite/style.min.6326d9dc8b173d44c2b431addc7b78633138d874bd37824a3ca1ddac925110e2.css" integrity="sha256-YybZ3IsXPUTCtDGt3Ht4YzE42HS9N4JKPKHdrJJREOI=">
+
+
+
+    <link rel="stylesheet" href="/MyWebsite/lib/css/prism.min.f1bc264bb9f5436d93667fa922aad9df70071445181e118a1fa02663a3ffe5e1.css" integrity="sha256-8bwmS7n1Q22TZn&#43;pIqrZ33AHFEUYHhGKH6AmY6P/5eE=">
+
+
+
+    
+    <script>
+        if (!('theme' in localStorage)) {
+            localStorage.theme = 'light';
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/MyWebsite/js/header.7c57075675400a1a12bc3fcfc744dd74e1e417b8db11fdef378d7a7ef1cc9e3f.js" integrity="sha256-fFcHVnVAChoSvD/Px0TddOHkF7jbEf3vN416fvHMnj8="></script>
+
+
+
+    <script defer src="/MyWebsite/js/zooming.3bda780b3d5a676b6068e5ad5fd77a313c4371117131529f7e7480e7d4b64d96.js" integrity="sha256-O9p4Cz1aZ2tgaOWtX9d6MTxDcRFxMVKffnSA59S2TZY="></script>
+
+
+
+
+
+
+
+    
+        
+
+        
+        
+
+        
+        
+            
+        
+
+        <script defer src="/MyWebsite/js/prism.69cc616c7ec557cfc437180ca37d7e67d4fa0d75612fe9a3a812cc8ca569a562.js" integrity="sha256-acxhbH7FV8/ENxgMo31&#43;Z9T6DXVhL&#43;mjqBLMjKVppWI=" data-manual></script>
+    
+
+
+
+    
+    
+    
+    <script defer src="/MyWebsite/js/search-en.dbec92fd74ba517bf4843da8ea85001241d0c6ad0bf2f5b4512068fde09d7695.js" integrity="sha256-2&#43;yS/XS6UXv0hD2o6oUAEkHQxq0L8vW0USBo/eCddpU="></script>
+
+
+
+
+<link rel="stylesheet" href="https://NecRose01.github.io/MyWebsite/user.css">
+
+    
+</head>
+<body><header>
+    <div id="header_left">
+        <div id="sidebar_btn">
+            <input type="checkbox" id="sidebar_btn_input" class="hidden" />
+            <label id="sidebar_btn_label" for="sidebar_btn_input">
+                <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+</svg>
+
+</svg>
+            </label>
+            <label id="sidebar_canvas_overlay_wrapper" for="sidebar_btn_input">
+                <div id="sidebar_canvas_overlay"></div>
+            </label>
+            <div id="sidebar">
+                <ul><li>
+                            <a href="/MyWebsite/posts/">Posts</a></li></ul>
+            </div>
+        </div>
+    
+        <div class="brand">
+            <div>
+                <a href="/MyWebsite/">MyHome</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+</svg>
+
+</svg>
+            <svg id="light_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+
+</svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>
+
+</svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+
+</svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn" onclick="void(0)">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+</svg>
+
+</svg>
+                            <span class="dropdown-desc">English</span>
+                        </div>
+                        <ul class="pure-menu-children">
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://NecRose01.github.io/MyWebsite/" class="pure-menu-link">English</a>
+                            </li>
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://NecRose01.github.io/MyWebsite/zh-tw/" class="pure-menu-link">正體中文</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu">
+    <ul class="pure-menu-list"><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="/MyWebsite/posts/" class="pure-menu-link">Posts</a>
+                    
+                </li></ul>
+</nav>
+<main>
+            <div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-phương-thức-chuỗi-string-methods"><strong>1. Phương Thức Chuỗi (String Methods)</strong></a></li>
+        <li><a href="#2-phương-thức-mảng-array-methods"><strong>2. Phương Thức Mảng (Array Methods)</strong></a></li>
+        <li><a href="#3-phương-thức-đối-tượng-object-methods"><strong>3. Phương Thức Đối Tượng (Object Methods)</strong></a></li>
+        <li><a href="#4-phương-thức-toán-học-math-methods"><strong>4. Phương Thức Toán Học (Math Methods)</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#kết-luận"><strong>Kết luận</strong></a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+
+
+<article >
+    
+    
+        
+        
+    
+    <p>JavaScript cung cấp rất nhiều phương thức để thao tác với các kiểu dữ liệu khác nhau, từ chuỗi, mảng đến đối tượng. Việc nắm vững các phương thức cơ bản sẽ giúp bạn viết mã nhanh chóng và hiệu quả hơn.</p>
+
+<h3 id="1-phương-thức-chuỗi-string-methods" class="header-anchor-wrapper"><strong>1. Phương Thức Chuỗi (String Methods)</strong>
+  <a href="#1-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-chu%e1%bb%97i-string-methods" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>JavaScript cung cấp nhiều phương thức hữu ích để làm việc với chuỗi văn bản.</p>
+
+<h4 id="charatindex" class="header-anchor-wrapper"><code>charAt(index)</code>
+  <a href="#charatindex" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>Phương thức <code>charAt()</code> trả về ký tự tại vị trí chỉ định trong chuỗi.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let text = &quot;Hello, World!&quot;;
+console.log(text.charAt(0)); // Kết quả: &quot;H&quot;
+</code></pre>
+
+<h4 id="touppercase-và-tolowercase" class="header-anchor-wrapper"><strong>toUpperCase()</strong> và <strong>toLowerCase()</strong>
+  <a href="#touppercase-v%c3%a0-tolowercase" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>Phương thức toUpperCase() chuyển tất cả ký tự trong chuỗi thành chữ hoa, trong khi toLowerCase() chuyển thành chữ thường.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let text = &quot;Hello, World!&quot;;
+console.log(text.toUpperCase()); // Kết quả: &quot;HELLO, WORLD!&quot;
+console.log(text.toLowerCase()); // Kết quả: &quot;hello, world!&quot;
+</code></pre>
+
+<h4 id="substringstart-end" class="header-anchor-wrapper"><strong>substring(start, end)</strong>
+  <a href="#substringstart-end" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>Phương thức substring() trả về một phần của chuỗi từ chỉ số start đến chỉ số end (không bao gồm chỉ số end).</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let text = &quot;Hello, World!&quot;;
+console.log(text.substring(0, 5)); // Kết quả: &quot;Hello&quot;
+</code></pre>
+
+<h4 id="replacesearchvalue-newvalue" class="header-anchor-wrapper"><strong>replace(searchValue, newValue)</strong>
+  <a href="#replacesearchvalue-newvalue" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>Phương thức replace() thay thế một phần của chuỗi bằng một chuỗi khác.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let text = &quot;Hello, World!&quot;;
+console.log(text.replace(&quot;World&quot;, &quot;JavaScript&quot;)); // Kết quả: &quot;Hello, JavaScript!&quot;
+</code></pre>
+
+<h3 id="2-phương-thức-mảng-array-methods" class="header-anchor-wrapper"><strong>2. Phương Thức Mảng (Array Methods)</strong>
+  <a href="#2-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-m%e1%ba%a3ng-array-methods" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>Mảng là một trong những kiểu dữ liệu quan trọng trong JavaScript, và có rất nhiều phương thức hữu ích để thao tác với mảng.</p>
+<p><strong>push()</strong>
+Phương thức push() thêm một hoặc nhiều phần tử vào cuối mảng và trả về độ dài mới của mảng.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let arr = [1, 2, 3];
+arr.push(4);
+console.log(arr); // Kết quả: [1, 2, 3, 4]
+</code></pre>
+<p><strong>pop()</strong>
+Phương thức pop() loại bỏ phần tử cuối cùng trong mảng và trả về phần tử đó.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let arr = [1, 2, 3];
+let lastElement = arr.pop();
+console.log(lastElement); // Kết quả: 3
+console.log(arr); // Kết quả: [1, 2]
+</code></pre>
+<p><strong>shift()</strong>
+Phương thức shift() loại bỏ phần tử đầu tiên trong mảng và trả về phần tử đó.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let arr = [1, 2, 3];
+let firstElement = arr.shift();
+console.log(firstElement); // Kết quả: 1
+console.log(arr); // Kết quả: [2, 3]
+</code></pre>
+<p><strong>map()</strong>
+Phương thức map() tạo ra một mảng mới bằng cách áp dụng một hàm cho mỗi phần tử trong mảng.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let arr = [1, 2, 3];
+let newArr = arr.map(x =&gt; x * 2);
+console.log(newArr); // Kết quả: [2, 4, 6]
+</code></pre>
+<p><strong>filter()</strong>
+Phương thức filter() tạo ra một mảng mới chỉ chứa những phần tử thoả mãn điều kiện mà bạn chỉ định.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let arr = [1, 2, 3, 4, 5];
+let evenNumbers = arr.filter(x =&gt; x % 2 === 0);
+console.log(evenNumbers); // Kết quả: [2, 4]
+</code></pre>
+
+<h3 id="3-phương-thức-đối-tượng-object-methods" class="header-anchor-wrapper"><strong>3. Phương Thức Đối Tượng (Object Methods)</strong>
+  <a href="#3-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-%c4%91%e1%bb%91i-t%c6%b0%e1%bb%a3ng-object-methods" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>Các đối tượng trong JavaScript cũng có nhiều phương thức hữu ích giúp bạn thao tác với các thuộc tính của đối tượng.</p>
+<p><strong>Object.keys()</strong>
+Phương thức Object.keys() trả về một mảng chứa tất cả các khóa (keys) của đối tượng.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let obj = { name: &quot;John&quot;, age: 30 };
+console.log(Object.keys(obj)); // Kết quả: [&quot;name&quot;, &quot;age&quot;]
+</code></pre>
+<p><strong>Object.values()</strong>
+Phương thức Object.values() trả về một mảng chứa tất cả các giá trị (values) của đối tượng.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let obj = { name: &quot;John&quot;, age: 30 };
+console.log(Object.values(obj)); // Kết quả: [&quot;John&quot;, 30]
+</code></pre>
+<p><strong>Object.assign()</strong>
+Phương thức Object.assign() sao chép giá trị của tất cả các thuộc tính từ đối tượng nguồn sang đối tượng đích.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">let obj1 = { name: &quot;John&quot; };
+let obj2 = { age: 30 };
+let obj3 = Object.assign({}, obj1, obj2);
+console.log(obj3); // Kết quả: { name: &quot;John&quot;, age: 30 }
+</code></pre>
+
+<h3 id="4-phương-thức-toán-học-math-methods" class="header-anchor-wrapper"><strong>4. Phương Thức Toán Học (Math Methods)</strong>
+  <a href="#4-ph%c6%b0%c6%a1ng-th%e1%bb%a9c-to%c3%a1n-h%e1%bb%8dc-math-methods" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>JavaScript cung cấp một số phương thức toán học hữu ích.</p>
+<p><strong>Math.round()</strong>
+Phương thức Math.round() làm tròn số về gần nhất.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">console.log(Math.round(4.5)); // Kết quả: 5
+console.log(Math.round(4.4)); // Kết quả: 4
+</code></pre>
+<p><strong>Math.random()</strong>
+Phương thức Math.random() trả về một số ngẫu nhiên trong khoảng từ 0 (bao gồm) đến 1 (không bao gồm).</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">console.log(Math.random()); // Kết quả: một số ngẫu nhiên từ 0 đến 1
+</code></pre>
+<p><strong>Math.max() và Math.min()</strong>
+Phương thức Math.max() trả về giá trị lớn nhất trong các tham số, còn Math.min() trả về giá trị nhỏ nhất.</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">console.log(Math.max(1, 2, 3)); // Kết quả: 3
+console.log(Math.min(1, 2, 3)); // Kết quả: 1
+</code></pre>
+
+<h2 id="kết-luận" class="header-anchor-wrapper"><strong>Kết luận</strong>
+  <a href="#k%e1%ba%bft-lu%e1%ba%adn" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+<p>Nắm vững các phương thức cơ bản trong JavaScript sẽ giúp bạn viết mã hiệu quả hơn và dễ dàng thao tác với các kiểu dữ liệu phổ biến như chuỗi, mảng và đối tượng. Hãy thử nghiệm các phương thức này trong các dự án của bạn để cải thiện kỹ năng lập trình JavaScript!x</p>
+</article>
+</div>
+
+
+                
+                    
+                
+
+                
+            </div>
+        </main>
+<footer>
+    <article>Copyright © 2021-2024 by kaiiiz</article>
+</footer>
+
+</body>
+</html>

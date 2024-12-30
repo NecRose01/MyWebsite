@@ -1,0 +1,493 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://NecRose01.github.io/MyWebsite/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giới Thiệu Các JavaScript Framework Phổ Biến - MyWebsite</title>
+
+    
+    <meta name="description" content="Khám phá các framework JavaScript phổ biến giúp tăng tốc quá trình phát triển ứng dụng web và cải thiện hiệu suất." />
+    
+
+    
+
+    
+    <meta name="author" content="Hugo Authors" />
+    
+
+    
+        <meta property="og:url" content="https://NecRose01.github.io/MyWebsite/posts/javascriptframework/">
+  <meta property="og:site_name" content="MyWebsite">
+  <meta property="og:title" content="Giới Thiệu Các JavaScript Framework Phổ Biến">
+  <meta property="og:description" content="Khám phá các framework JavaScript phổ biến giúp tăng tốc quá trình phát triển ứng dụng web và cải thiện hiệu suất.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-30T22:49:44+07:00">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Framework">
+    <meta property="article:tag" content="Lập Trình Web">
+
+    
+
+    
+        
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Giới Thiệu Các JavaScript Framework Phổ Biến">
+  <meta name="twitter:description" content="Khám phá các framework JavaScript phổ biến giúp tăng tốc quá trình phát triển ứng dụng web và cải thiện hiệu suất.">
+
+    <link rel="stylesheet" href="/MyWebsite/style.min.6326d9dc8b173d44c2b431addc7b78633138d874bd37824a3ca1ddac925110e2.css" integrity="sha256-YybZ3IsXPUTCtDGt3Ht4YzE42HS9N4JKPKHdrJJREOI=">
+
+
+
+    <link rel="stylesheet" href="/MyWebsite/lib/css/prism.min.f1bc264bb9f5436d93667fa922aad9df70071445181e118a1fa02663a3ffe5e1.css" integrity="sha256-8bwmS7n1Q22TZn&#43;pIqrZ33AHFEUYHhGKH6AmY6P/5eE=">
+
+
+
+    
+    <script>
+        if (!('theme' in localStorage)) {
+            localStorage.theme = 'light';
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/MyWebsite/js/header.7c57075675400a1a12bc3fcfc744dd74e1e417b8db11fdef378d7a7ef1cc9e3f.js" integrity="sha256-fFcHVnVAChoSvD/Px0TddOHkF7jbEf3vN416fvHMnj8="></script>
+
+
+
+    <script defer src="/MyWebsite/js/zooming.3bda780b3d5a676b6068e5ad5fd77a313c4371117131529f7e7480e7d4b64d96.js" integrity="sha256-O9p4Cz1aZ2tgaOWtX9d6MTxDcRFxMVKffnSA59S2TZY="></script>
+
+
+
+
+
+
+
+    
+        
+
+        
+        
+
+        
+        
+            
+        
+
+        <script defer src="/MyWebsite/js/prism.69cc616c7ec557cfc437180ca37d7e67d4fa0d75612fe9a3a812cc8ca569a562.js" integrity="sha256-acxhbH7FV8/ENxgMo31&#43;Z9T6DXVhL&#43;mjqBLMjKVppWI=" data-manual></script>
+    
+
+
+
+    
+    
+    
+    <script defer src="/MyWebsite/js/search-en.dbec92fd74ba517bf4843da8ea85001241d0c6ad0bf2f5b4512068fde09d7695.js" integrity="sha256-2&#43;yS/XS6UXv0hD2o6oUAEkHQxq0L8vW0USBo/eCddpU="></script>
+
+
+
+
+<link rel="stylesheet" href="https://NecRose01.github.io/MyWebsite/user.css">
+
+    
+</head>
+<body><header>
+    <div id="header_left">
+        <div id="sidebar_btn">
+            <input type="checkbox" id="sidebar_btn_input" class="hidden" />
+            <label id="sidebar_btn_label" for="sidebar_btn_input">
+                <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+</svg>
+
+</svg>
+            </label>
+            <label id="sidebar_canvas_overlay_wrapper" for="sidebar_btn_input">
+                <div id="sidebar_canvas_overlay"></div>
+            </label>
+            <div id="sidebar">
+                <ul><li>
+                            <a href="/MyWebsite/posts/">Posts</a></li></ul>
+            </div>
+        </div>
+    
+        <div class="brand">
+            <div>
+                <a href="/MyWebsite/">MyHome</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+</svg>
+
+</svg>
+            <svg id="light_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+
+</svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>
+
+</svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+
+</svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn" onclick="void(0)">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+</svg>
+
+</svg>
+                            <span class="dropdown-desc">English</span>
+                        </div>
+                        <ul class="pure-menu-children">
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://NecRose01.github.io/MyWebsite/" class="pure-menu-link">English</a>
+                            </li>
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://NecRose01.github.io/MyWebsite/zh-tw/" class="pure-menu-link">正體中文</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu">
+    <ul class="pure-menu-list"><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="/MyWebsite/posts/" class="pure-menu-link">Posts</a>
+                    
+                </li></ul>
+</nav>
+<main>
+            <div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#javascript-framework-là-gì">JavaScript Framework là gì?</a></li>
+        <li><a href="#các-javascript-framework-phổ-biến">Các JavaScript Framework Phổ Biến</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+
+
+<article >
+    
+    
+        
+        
+    
+    <p>Khi phát triển ứng dụng web, việc lựa chọn một JavaScript framework phù hợp có thể giúp bạn tiết kiệm thời gian và công sức. Các framework này cung cấp một bộ công cụ, thư viện và quy ước để xây dựng các ứng dụng phức tạp với ít mã nguồn hơn, đồng thời đảm bảo mã dễ duy trì và mở rộng.</p>
+
+<h3 id="javascript-framework-là-gì" class="header-anchor-wrapper">JavaScript Framework là gì?
+  <a href="#javascript-framework-l%c3%a0-g%c3%ac" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>JavaScript framework là một tập hợp các thư viện mã nguồn được thiết kế để hỗ trợ các nhà phát triển xây dựng các ứng dụng web nhanh chóng và dễ dàng. Frameworks cung cấp cấu trúc và quy tắc cho mã nguồn của bạn, giúp tăng cường tính nhất quán và hiệu suất trong khi giảm thiểu mã thừa.</p>
+<p>Khác với thư viện JavaScript đơn giản, một framework cung cấp nhiều chức năng hơn, như xử lý dữ liệu, giao diện người dùng và các công cụ hỗ trợ phát triển khác.</p>
+
+<h3 id="các-javascript-framework-phổ-biến" class="header-anchor-wrapper">Các JavaScript Framework Phổ Biến
+  <a href="#c%c3%a1c-javascript-framework-ph%e1%bb%95-bi%e1%ba%bfn" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>Dưới đây là một số framework JavaScript phổ biến nhất mà bạn có thể lựa chọn:</p>
+
+<h4 id="1-react" class="header-anchor-wrapper">1. <strong>React</strong>
+  <a href="#1-react" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>React là một thư viện JavaScript được phát triển bởi Facebook, được sử dụng chủ yếu để xây dựng giao diện người dùng cho các ứng dụng web đơn trang (SPA). Mặc dù không phải là một framework hoàn chỉnh, nhưng React cung cấp những công cụ mạnh mẽ để phát triển UI, đặc biệt là với khả năng tạo các component tái sử dụng được.</p>
+<p>React đặc biệt nổi bật nhờ vào:</p>
+<ul>
+<li><strong>Virtual DOM</strong>: Giúp tối ưu hóa hiệu suất bằng cách chỉ cập nhật những phần thay đổi trong giao diện.</li>
+<li><strong>Component-based</strong>: Các thành phần có thể tái sử dụng và dễ bảo trì.</li>
+<li><strong>Một cộng đồng lớn và nhiều tài nguyên hỗ trợ.</strong></li>
+</ul>
+<p>Ví dụ đơn giản về React:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">import React from &quot;react&quot;;
+
+function App() {
+  return &lt;h1&gt;Chào mừng đến với React!&lt;/h1&gt;;
+}
+
+export default App;
+</code></pre>
+
+<h4 id="2-angular" class="header-anchor-wrapper">2. <strong>Angular</strong>
+  <a href="#2-angular" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>Angular là một framework mạnh mẽ và toàn diện được phát triển bởi Google. Angular sử dụng TypeScript và cung cấp các tính năng mạnh mẽ cho việc phát triển ứng dụng web, bao gồm routing, quản lý trạng thái, và kiểm tra dữ liệu.</p>
+<p>Ưu điểm nổi bật của Angular:</p>
+<ul>
+<li><strong>Two-way data binding</strong>: Liên kết dữ liệu giữa mô hình và giao diện người dùng.</li>
+<li><strong>Tính modular</strong>: Các module giúp tổ chức mã nguồn một cách hợp lý.</li>
+<li><strong>Dependency Injection</strong>: Giúp tăng khả năng kiểm thử và tái sử dụng mã.
+Ví dụ về Angular:</li>
+</ul>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `&lt;h1&gt;Chào mừng đến với Angular!&lt;/h1&gt;`
+})
+export class AppComponent { }
+</code></pre>
+
+<h4 id="3-vuejs" class="header-anchor-wrapper">3. <strong>Vue.js</strong>
+  <a href="#3-vuejs" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>Vue.js là một framework nhẹ và dễ sử dụng, được thiết kế để dễ học và tích hợp vào các dự án hiện tại. Vue kết hợp các tính năng của Angular và React nhưng có cú pháp đơn giản hơn, giúp tăng tốc quá trình phát triển ứng dụng.</p>
+<p>Những điểm nổi bật của Vue.js:</p>
+<ul>
+<li><strong>Reactivity</strong>: Dễ dàng theo dõi và cập nhật dữ liệu thay đổi.</li>
+<li><strong>Cộng đồng hỗ trợ mạnh mẽ</strong>: Vue có một cộng đồng người dùng lớn, đặc biệt ở khu vực Châu Á.</li>
+<li><strong>Dễ dàng học</strong>: Vue dễ dàng tiếp cận đối với các lập trình viên mới bắt đầu.
+Ví dụ về Vue.js:</li>
+</ul>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">const app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Chào mừng đến với Vue.js!'
+  }
+});
+</code></pre>
+
+<h4 id="4-svelte" class="header-anchor-wrapper">4. <strong>Svelte</strong>
+  <a href="#4-svelte" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>Svelte là một framework JavaScript khác biệt với các framework truyền thống vì nó không sử dụng Virtual DOM. Thay vào đó, Svelte biên dịch mã JavaScript thành mã DOM thuần túy khi build ứng dụng, giúp giảm thiểu kích thước gói và cải thiện hiệu suất.</p>
+<p>Ưu điểm của Svelte:</p>
+<ul>
+<li><strong>Hiệu suất tuyệt vời</strong>: Không sử dụng Virtual DOM, giúp tăng tốc độ xử lý.</li>
+<li><strong>Cú pháp đơn giản</strong>: Dễ dàng học và làm việc.</li>
+<li><strong>Không phụ thuộc vào thư viện</strong>: Không yêu cầu thêm thư viện hoặc môi trường chạy.
+Ví dụ về Svelte:</li>
+</ul>
+<pre  class="mc-prism hide language-text" ><code class="language-javascript">&lt;script&gt;
+  let message = 'Chào mừng đến với Svelte!';
+&lt;/script&gt;
+
+&lt;h1&gt;{message}&lt;/h1&gt;
+</code></pre>
+
+<h4 id="lựa-chọn-framework-phù-hợp" class="header-anchor-wrapper"><strong>Lựa Chọn Framework Phù Hợp</strong>
+  <a href="#l%e1%bb%b1a-ch%e1%bb%8dn-framework-ph%c3%b9-h%e1%bb%a3p" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>Mỗi framework JavaScript có những điểm mạnh riêng, và sự lựa chọn phụ thuộc vào yêu cầu của dự án. Nếu bạn muốn xây dựng một ứng dụng web phức tạp và cần nhiều tính năng hỗ trợ, Angular có thể là lựa chọn phù hợp. Nếu bạn chỉ cần một UI linh hoạt và dễ bảo trì, React hoặc Vue sẽ là lựa chọn tốt. Còn nếu bạn muốn tối ưu hóa hiệu suất và giảm kích thước ứng dụng, Svelte là một sự lựa chọn đáng cân nhắc.</p>
+
+<h4 id="kết-luận" class="header-anchor-wrapper"><strong>Kết luận</strong>
+  <a href="#k%e1%ba%bft-lu%e1%ba%adn" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<p>JavaScript framework giúp giảm bớt nhiều công việc phát triển phức tạp và tạo ra các ứng dụng mạnh mẽ, hiệu quả. Tùy thuộc vào nhu cầu và đặc điểm dự án, bạn có thể lựa chọn framework phù hợp để tối ưu hóa quá trình phát triển. Hãy thử nghiệm và khám phá các framework này để tìm ra công cụ phù hợp nhất cho bạn!</p>
+</article>
+</div>
+
+
+                
+                    
+                
+
+                
+            </div>
+        </main>
+<footer>
+    <article>Copyright © 2021-2024 by kaiiiz</article>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on MyWebsite</title>
+    <link>https://NecRose01.github.io/MyWebsite/tags/javascript/</link>
+    <description>Recent content in Javascript on MyWebsite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://NecRose01.github.io/MyWebsite/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Các Phương Thức Cơ Bản Trong JavaScript</title>
+      <link>https://NecRose01.github.io/MyWebsite/posts/variable-in-javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://NecRose01.github.io/MyWebsite/posts/variable-in-javascript/</guid>
+      <description>&lt;p&gt;JavaScript cung cấp rất nhiều phương thức để thao tác với các kiểu dữ liệu khác nhau, từ chuỗi, mảng đến đối tượng. Việc nắm vững các phương thức cơ bản sẽ giúp bạn viết mã nhanh chóng và hiệu quả hơn.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cách Cài Java và JavaScript</title>
+      <link>https://NecRose01.github.io/MyWebsite/posts/cachcaidatjavajavascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://NecRose01.github.io/MyWebsite/posts/cachcaidatjavajavascript/</guid>
+      <description>&lt;p&gt;Để bắt đầu lập trình với &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt;, bạn cần cài đặt các công cụ cần thiết. Dưới đây là hướng dẫn chi tiết về cách cài đặt Java và JavaScript trên các hệ điều hành phổ biến: Windows, macOS và Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Giới Thiệu Các JavaScript Framework Phổ Biến</title>
+      <link>https://NecRose01.github.io/MyWebsite/posts/javascriptframework/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://NecRose01.github.io/MyWebsite/posts/javascriptframework/</guid>
+      <description>&lt;p&gt;Khi phát triển ứng dụng web, việc lựa chọn một JavaScript framework phù hợp có thể giúp bạn tiết kiệm thời gian và công sức. Các framework này cung cấp một bộ công cụ, thư viện và quy ước để xây dựng các ứng dụng phức tạp với ít mã nguồn hơn, đồng thời đảm bảo mã dễ duy trì và mở rộng.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Giới Thiệu JavaScript: Ngôn Ngữ Lập Trình Web Mạnh Mẽ</title>
+      <link>https://NecRose01.github.io/MyWebsite/posts/javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://NecRose01.github.io/MyWebsite/posts/javascript/</guid>
+      <description>&lt;p&gt;JavaScript là một trong những ngôn ngữ lập trình phổ biến và mạnh mẽ nhất, chủ yếu được sử dụng để phát triển ứng dụng web động. Cùng với HTML và CSS, JavaScript tạo thành bộ ba công nghệ cơ bản để xây dựng các trang web hiện đại.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

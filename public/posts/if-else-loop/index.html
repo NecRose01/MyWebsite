@@ -1,0 +1,614 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://NecRose01.github.io/MyWebsite/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Câu Lệnh If-Else Trong Java - MyWebsite</title>
+
+    
+    <meta name="description" content="Tìm hiểu cách sử dụng câu lệnh điều kiện if-else trong Java" />
+    
+
+    
+
+    
+    <meta name="author" content="Hugo Authors" />
+    
+
+    
+        <meta property="og:url" content="https://NecRose01.github.io/MyWebsite/posts/if-else-loop/">
+  <meta property="og:site_name" content="MyWebsite">
+  <meta property="og:title" content="Câu Lệnh If-Else Trong Java">
+  <meta property="og:description" content="Tìm hiểu cách sử dụng câu lệnh điều kiện if-else trong Java">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-30T22:49:44+07:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Câu Lệnh If-Else">
+    <meta property="article:tag" content="Lập Trình">
+
+    
+
+    
+        
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Câu Lệnh If-Else Trong Java">
+  <meta name="twitter:description" content="Tìm hiểu cách sử dụng câu lệnh điều kiện if-else trong Java">
+
+    <link rel="stylesheet" href="/MyWebsite/style.min.6326d9dc8b173d44c2b431addc7b78633138d874bd37824a3ca1ddac925110e2.css" integrity="sha256-YybZ3IsXPUTCtDGt3Ht4YzE42HS9N4JKPKHdrJJREOI=">
+
+
+
+    <link rel="stylesheet" href="/MyWebsite/lib/css/prism.min.f1bc264bb9f5436d93667fa922aad9df70071445181e118a1fa02663a3ffe5e1.css" integrity="sha256-8bwmS7n1Q22TZn&#43;pIqrZ33AHFEUYHhGKH6AmY6P/5eE=">
+
+
+
+    
+    <script>
+        if (!('theme' in localStorage)) {
+            localStorage.theme = 'light';
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/MyWebsite/js/header.7c57075675400a1a12bc3fcfc744dd74e1e417b8db11fdef378d7a7ef1cc9e3f.js" integrity="sha256-fFcHVnVAChoSvD/Px0TddOHkF7jbEf3vN416fvHMnj8="></script>
+
+
+
+    <script defer src="/MyWebsite/js/zooming.3bda780b3d5a676b6068e5ad5fd77a313c4371117131529f7e7480e7d4b64d96.js" integrity="sha256-O9p4Cz1aZ2tgaOWtX9d6MTxDcRFxMVKffnSA59S2TZY="></script>
+
+
+
+
+
+
+
+    
+        
+
+        
+        
+
+        
+        
+            
+        
+
+        <script defer src="/MyWebsite/js/prism.69cc616c7ec557cfc437180ca37d7e67d4fa0d75612fe9a3a812cc8ca569a562.js" integrity="sha256-acxhbH7FV8/ENxgMo31&#43;Z9T6DXVhL&#43;mjqBLMjKVppWI=" data-manual></script>
+    
+
+
+
+    
+    
+    
+    <script defer src="/MyWebsite/js/search-en.dbec92fd74ba517bf4843da8ea85001241d0c6ad0bf2f5b4512068fde09d7695.js" integrity="sha256-2&#43;yS/XS6UXv0hD2o6oUAEkHQxq0L8vW0USBo/eCddpU="></script>
+
+
+
+
+<link rel="stylesheet" href="https://NecRose01.github.io/MyWebsite/user.css">
+
+    
+</head>
+<body><header>
+    <div id="header_left">
+        <div id="sidebar_btn">
+            <input type="checkbox" id="sidebar_btn_input" class="hidden" />
+            <label id="sidebar_btn_label" for="sidebar_btn_input">
+                <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+</svg>
+
+</svg>
+            </label>
+            <label id="sidebar_canvas_overlay_wrapper" for="sidebar_btn_input">
+                <div id="sidebar_canvas_overlay"></div>
+            </label>
+            <div id="sidebar">
+                <ul><li>
+                            <a href="/MyWebsite/posts/">Posts</a></li></ul>
+            </div>
+        </div>
+    
+        <div class="brand">
+            <div>
+                <a href="/MyWebsite/">MyHome</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+</svg>
+
+</svg>
+            <svg id="light_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+
+</svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>
+
+</svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+
+</svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn" onclick="void(0)">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+</svg>
+
+</svg>
+                            <span class="dropdown-desc">English</span>
+                        </div>
+                        <ul class="pure-menu-children">
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://NecRose01.github.io/MyWebsite/" class="pure-menu-link">English</a>
+                            </li>
+                            
+                            <li class="pure-menu-item">
+                                <a href="https://NecRose01.github.io/MyWebsite/zh-tw/" class="pure-menu-link">正體中文</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu">
+    <ul class="pure-menu-list"><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="/MyWebsite/posts/" class="pure-menu-link">Posts</a>
+                    
+                </li></ul>
+</nav>
+<main>
+            <div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#cú-pháp-cơ-bản-của-if-else">Cú pháp cơ bản của <code>if-else</code></a></li>
+        <li><a href="#sử-dụng-if-else-if-else">Sử dụng <code>if-else if-else</code></a></li>
+        <li><a href="#các-lưu-ý-quan-trọng">Các lưu ý quan trọng</a></li>
+      </ul>
+    </li>
+    <li><a href="#vòng-lặp-for">Vòng Lặp For</a>
+      <ul>
+        <li><a href="#cú-pháp-cơ-bản-của-vòng-lặp-for">Cú pháp cơ bản của vòng lặp <code>for</code></a></li>
+        <li><a href="#vòng-lặp-lồng-nhau">Vòng lặp lồng nhau</a></li>
+      </ul>
+    </li>
+    <li><a href="#vòng-lặp-while">Vòng Lặp While</a>
+      <ul>
+        <li><a href="#cú-pháp-cơ-bản-của-vòng-lặp-while">Cú pháp cơ bản của vòng lặp <code>while</code></a></li>
+        <li><a href="#vòng-lặp-do-while">Vòng Lặp Do-While</a></li>
+      </ul>
+    </li>
+    <li><a href="#so-sánh-for-while-và-do-while">So Sánh <code>for</code>, <code>while</code>, và <code>do-while</code></a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+
+
+<article >
+    
+    
+        
+        
+    
+    <p>Trong Java, câu lệnh <code>if-else</code> là một cấu trúc điều kiện phổ biến, cho phép thực thi mã dựa trên kết quả của một điều kiện logic.</p>
+
+<h3 id="cú-pháp-cơ-bản-của-if-else" class="header-anchor-wrapper">Cú pháp cơ bản của <code>if-else</code>
+  <a href="#c%c3%ba-ph%c3%a1p-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-if-else" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<pre  class="mc-prism hide language-text" ><code class="language-java">if (điều_kiện) {
+    // Khối lệnh thực thi nếu điều kiện đúng
+} else {
+    // Khối lệnh thực thi nếu điều kiện sai
+}
+</code></pre>
+<p>Ví dụ:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">public class IfElseExample {
+    public static void main(String[] args) {
+        int number = 10;
+
+        if (number &gt; 0) {
+            System.out.println(&quot;Số là số dương.&quot;);
+        } else {
+            System.out.println(&quot;Số là số không hoặc số âm.&quot;);
+        }
+    }
+}
+</code></pre>
+
+<h3 id="sử-dụng-if-else-if-else" class="header-anchor-wrapper">Sử dụng <code>if-else if-else</code>
+  <a href="#s%e1%bb%ad-d%e1%bb%a5ng-if-else-if-else" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>Bạn có thể kiểm tra nhiều điều kiện bằng cách sử dụng cấu trúc <code>if-else if-else</code>:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">if (điều_kiện1) {
+    // Khối lệnh thực thi nếu điều kiện1 đúng
+} else if (điều_kiện2) {
+    // Khối lệnh thực thi nếu điều kiện2 đúng
+} else {
+    // Khối lệnh thực thi nếu không điều kiện nào đúng
+}
+</code></pre>
+<p>Ví dụ:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">public class IfElseIfExample {
+    public static void main(String[] args) {
+        int number = -10;
+
+        if (number &gt; 0) {
+            System.out.println(&quot;Số là số dương.&quot;);
+        } else if (number == 0) {
+            System.out.println(&quot;Số là số không.&quot;);
+        } else {
+            System.out.println(&quot;Số là số âm.&quot;);
+        }
+    }
+}
+</code></pre>
+
+<h3 id="các-lưu-ý-quan-trọng" class="header-anchor-wrapper">Các lưu ý quan trọng
+  <a href="#c%c3%a1c-l%c6%b0u-%c3%bd-quan-tr%e1%bb%8dng" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<ol>
+<li>Điều kiện trong <code>if</code> hoặc <code>else if</code> phải trả về giá trị boolean (<code>true</code> hoặc <code>false</code>).</li>
+<li>Bạn có thể lồng nhiều câu lệnh <code>if-else</code>.</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-java">if (điều_kiện1) {
+    if (điều_kiện2) {
+        // Khối lệnh thực thi nếu cả điều kiện1 và điều kiện2 đúng
+    }
+}
+</code></pre>
+<p>Sử dụng câu lệnh <code>if-else</code> hiệu quả sẽ giúp mã nguồn của bạn dễ đọc và dễ bảo trì hơn.</p>
+<p>+++
+author = &ldquo;Hugo Authors&rdquo;
+title = &ldquo;Vòng Lặp For và While Trong Java&rdquo;
+date = &ldquo;2024-12-30&rdquo;
+description = &ldquo;Hướng dẫn cơ bản về vòng lặp for và while trong Java&rdquo;
+tags = [
+&ldquo;java&rdquo;, &ldquo;vòng lặp&rdquo;, &ldquo;lập trình&rdquo;
+]
++++</p>
+<p>Vòng lặp trong Java được sử dụng để thực thi một khối lệnh nhiều lần, giúp giảm thiểu việc viết mã lặp đi lặp lại.</p>
+<!--more-->
+
+<h2 id="vòng-lặp-for" class="header-anchor-wrapper">Vòng Lặp For
+  <a href="#v%c3%b2ng-l%e1%ba%b7p-for" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+
+<h3 id="cú-pháp-cơ-bản-của-vòng-lặp-for" class="header-anchor-wrapper">Cú pháp cơ bản của vòng lặp <code>for</code>
+  <a href="#c%c3%ba-ph%c3%a1p-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-v%c3%b2ng-l%e1%ba%b7p-for" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<pre  class="mc-prism hide language-text" ><code class="language-java">for (khởi_tạo; điều_kiện; cập_nhật) {
+    // Khối lệnh thực thi trong mỗi lần lặp
+}
+</code></pre>
+<p>Ví dụ:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">public class ForLoopExample {
+    public static void main(String[] args) {
+        for (int i = 1; i &lt;= 5; i++) {
+            System.out.println(&quot;Giá trị của i: &quot; + i);
+        }
+    }
+}
+</code></pre>
+
+<h3 id="vòng-lặp-lồng-nhau" class="header-anchor-wrapper">Vòng lặp lồng nhau
+  <a href="#v%c3%b2ng-l%e1%ba%b7p-l%e1%bb%93ng-nhau" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>Bạn có thể sử dụng vòng lặp <code>for</code> lồng nhau:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">for (int i = 1; i &lt;= 3; i++) {
+    for (int j = 1; j &lt;= 2; j++) {
+        System.out.println(&quot;i: &quot; + i + &quot;, j: &quot; + j);
+    }
+}
+</code></pre>
+
+<h2 id="vòng-lặp-while" class="header-anchor-wrapper">Vòng Lặp While
+  <a href="#v%c3%b2ng-l%e1%ba%b7p-while" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+
+<h3 id="cú-pháp-cơ-bản-của-vòng-lặp-while" class="header-anchor-wrapper">Cú pháp cơ bản của vòng lặp <code>while</code>
+  <a href="#c%c3%ba-ph%c3%a1p-c%c6%a1-b%e1%ba%a3n-c%e1%bb%a7a-v%c3%b2ng-l%e1%ba%b7p-while" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<pre  class="mc-prism hide language-text" ><code class="language-java">while (điều_kiện) {
+    // Khối lệnh thực thi khi điều kiện đúng
+}
+</code></pre>
+<p>Ví dụ:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">public class WhileLoopExample {
+    public static void main(String[] args) {
+        int count = 1;
+
+        while (count &lt;= 5) {
+            System.out.println(&quot;Đếm: &quot; + count);
+            count++;
+        }
+    }
+}
+</code></pre>
+
+<h3 id="vòng-lặp-do-while" class="header-anchor-wrapper">Vòng Lặp Do-While
+  <a href="#v%c3%b2ng-l%e1%ba%b7p-do-while" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>Vòng lặp <code>do-while</code> luôn thực thi ít nhất một lần:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">do {
+    // Khối lệnh thực thi
+} while (điều_kiện);
+</code></pre>
+<p>Ví dụ:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-java">public class DoWhileExample {
+    public static void main(String[] args) {
+        int count = 1;
+
+        do {
+            System.out.println(&quot;Đếm: &quot; + count);
+            count++;
+        } while (count &lt;= 5);
+    }
+}
+</code></pre>
+
+<h2 id="so-sánh-for-while-và-do-while" class="header-anchor-wrapper">So Sánh <code>for</code>, <code>while</code>, và <code>do-while</code>
+  <a href="#so-s%c3%a1nh-for-while-v%c3%a0-do-while" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+<table class="mc-table">
+  <thead>
+      <tr>
+          <th>Vòng Lặp</th>
+          <th>Khi nào sử dụng</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>for</code></td>
+          <td>Khi biết trước số lần lặp</td>
+      </tr>
+      <tr>
+          <td><code>while</code></td>
+          <td>Khi không biết trước số lần lặp, nhưng điều kiện kiểm tra phải đúng ngay từ đầu</td>
+      </tr>
+      <tr>
+          <td><code>do-while</code></td>
+          <td>Khi muốn thực thi ít nhất một lần, bất kể điều kiện ban đầu</td>
+      </tr>
+  </tbody>
+</table>
+<p>Hiểu rõ cách sử dụng vòng lặp sẽ giúp bạn tối ưu hóa mã nguồn và giải quyết các bài toán hiệu quả hơn.</p>
+</article>
+</div>
+
+
+                
+                    
+                
+
+                
+            </div>
+        </main>
+<footer>
+    <article>Copyright © 2021-2024 by kaiiiz</article>
+</footer>
+
+</body>
+</html>

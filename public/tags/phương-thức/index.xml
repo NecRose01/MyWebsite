@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phương Thức on MyWebsite</title>
+    <link>https://NecRose01.github.io/MyWebsite/tags/ph%C6%B0%C6%A1ng-th%E1%BB%A9c/</link>
+    <description>Recent content in Phương Thức on MyWebsite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://NecRose01.github.io/MyWebsite/tags/ph%C6%B0%C6%A1ng-th%E1%BB%A9c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Các Phương Thức Cơ Bản Trong JavaScript</title>
+      <link>https://NecRose01.github.io/MyWebsite/posts/variable-in-javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://NecRose01.github.io/MyWebsite/posts/variable-in-javascript/</guid>
+      <description>&lt;p&gt;JavaScript cung cấp rất nhiều phương thức để thao tác với các kiểu dữ liệu khác nhau, từ chuỗi, mảng đến đối tượng. Việc nắm vững các phương thức cơ bản sẽ giúp bạn viết mã nhanh chóng và hiệu quả hơn.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
