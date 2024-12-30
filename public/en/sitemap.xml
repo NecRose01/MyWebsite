@@ -2,103 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-  </url><url>
     <loc>http://localhost:1313/tags/2024/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bi%E1%BA%BFn/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/variable-in-java/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/variable-in-javascript/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/cachcaidatjavajavascript/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/c%C3%A0i-%C4%91%E1%BA%B7t/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/c%C3%A2u-l%E1%BB%87nh-if-else/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/if-else-loop/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/framework/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/javascriptframework/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/javascript/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/index/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/java/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/javavaungdungnam2024/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/javascript/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/l%E1%BA%ADp-tr%C3%ACnh/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/l%E1%BA%ADp-tr%C3%ACnh-c%C6%A1-b%E1%BA%A3n/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/l%E1%BA%ADp-tr%C3%ACnh-web/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ng%C3%B4n-ng%E1%BB%AF-l%E1%BA%ADp-tr%C3%ACnh/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/welcome-to-java/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ph%C6%B0%C6%A1ng-th%E1%BB%A9c/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/posts/"
-                />
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/so-s%C3%A1nh/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/java-and-other-languages/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-12-30T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -108,6 +79,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/zh-tw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
                 />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -120,6 +104,22 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/index/</loc>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-12-30T22:49:44+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="http://localhost:1313/zh-tw/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/posts/"
                 />
   </url><url>
     <loc>http://localhost:1313/series/</loc>

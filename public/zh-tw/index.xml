@@ -5,8 +5,7 @@
     <link>http://localhost:1313/zh-tw/</link>
     <description>Recent content on MyWebsite</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/zh-tw/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-tw</language><atom:link href="http://localhost:1313/zh-tw/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown Syntax Guide</title>
       <link>http://localhost:1313/zh-tw/posts/markdown-syntax/</link>
