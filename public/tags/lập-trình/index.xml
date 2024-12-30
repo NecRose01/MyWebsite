@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lập Trình on MyWebsite</title>
+    <link>http://localhost:1313/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
+    <description>Recent content in Lập Trình on MyWebsite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/l%E1%BA%ADp-tr%C3%ACnh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cách Cài Java và JavaScript</title>
+      <link>http://localhost:1313/posts/cachcaidatjavajavascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cachcaidatjavajavascript/</guid>
+      <description>&lt;p&gt;Để bắt đầu lập trình với &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt;, bạn cần cài đặt các công cụ cần thiết. Dưới đây là hướng dẫn chi tiết về cách cài đặt Java và JavaScript trên các hệ điều hành phổ biến: Windows, macOS và Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Câu Lệnh If-Else Trong Java</title>
+      <link>http://localhost:1313/posts/if-else-loop/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/if-else-loop/</guid>
+      <description>&lt;p&gt;Trong Java, câu lệnh &lt;code&gt;if-else&lt;/code&gt; là một cấu trúc điều kiện phổ biến, cho phép thực thi mã dựa trên kết quả của một điều kiện logic.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java Trong Năm 2024: Những Đổi Mới Và Tiềm Năng</title>
+      <link>http://localhost:1313/posts/javavaungdungnam2024/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/javavaungdungnam2024/</guid>
+      <description>&lt;p&gt;Java đã và đang giữ vững vị trí là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới. Mặc dù có sự cạnh tranh từ các ngôn ngữ khác như Python, JavaScript và C++, Java vẫn tiếp tục phát triển mạnh mẽ trong năm 2024. Vậy Java trong năm 2024 có gì mới và tại sao nó vẫn là sự lựa chọn hàng đầu của các lập trình viên?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

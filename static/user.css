@@ -1,0 +1,16 @@
+html[data-theme="dark"] {
+}
+h1 {
+  font-size: 4rem; /* Thay đổi kích thước chữ tại đây */
+}
+h5 {
+  font-size: 2rem; /* Thay đổi kích thước chữ tại đây */
+}
+p {
+  font-size: 1.4rem; /* Thay đổi kích thước font tại đây */
+}
+/* Phóng to chữ 'Posts' trên thanh header */
+.navbar-item a {
+  font-size: 1.2rem; /* Điều chỉnh giá trị để tăng kích thước */
+  font-weight: bold; /* Tùy chọn: tăng độ đậm */
+}

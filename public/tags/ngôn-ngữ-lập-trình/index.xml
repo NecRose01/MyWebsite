@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ngôn Ngữ Lập Trình on MyWebsite</title>
+    <link>http://localhost:1313/tags/ng%C3%B4n-ng%E1%BB%AF-l%E1%BA%ADp-tr%C3%ACnh/</link>
+    <description>Recent content in Ngôn Ngữ Lập Trình on MyWebsite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ng%C3%B4n-ng%E1%BB%AF-l%E1%BA%ADp-tr%C3%ACnh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới Thiệu JavaScript: Ngôn Ngữ Lập Trình Web Mạnh Mẽ</title>
+      <link>http://localhost:1313/posts/javascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/javascript/</guid>
+      <description>&lt;p&gt;JavaScript là một trong những ngôn ngữ lập trình phổ biến và mạnh mẽ nhất, chủ yếu được sử dụng để phát triển ứng dụng web động. Cùng với HTML và CSS, JavaScript tạo thành bộ ba công nghệ cơ bản để xây dựng các trang web hiện đại.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java Trong Năm 2024: Những Đổi Mới Và Tiềm Năng</title>
+      <link>http://localhost:1313/posts/javavaungdungnam2024/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/javavaungdungnam2024/</guid>
+      <description>&lt;p&gt;Java đã và đang giữ vững vị trí là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới. Mặc dù có sự cạnh tranh từ các ngôn ngữ khác như Python, JavaScript và C++, Java vẫn tiếp tục phát triển mạnh mẽ trong năm 2024. Vậy Java trong năm 2024 có gì mới và tại sao nó vẫn là sự lựa chọn hàng đầu của các lập trình viên?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>So Sánh Giữa Java và Một Số Ngôn Ngữ Khác</title>
+      <link>http://localhost:1313/posts/java-and-other-languages/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/java-and-other-languages/</guid>
+      <description>&lt;p&gt;Java là một trong những ngôn ngữ lập trình phổ biến nhất, được sử dụng rộng rãi trong phát triển phần mềm và ứng dụng web. Tuy nhiên, trong lĩnh vực lập trình, còn rất nhiều ngôn ngữ khác như Python, C++, và JavaScript cũng có những đặc điểm riêng. Trong bài viết này, chúng ta sẽ so sánh Java với một số ngôn ngữ lập trình phổ biến.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

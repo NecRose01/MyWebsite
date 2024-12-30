@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Framework on MyWebsite</title>
+    <link>http://localhost:1313/tags/framework/</link>
+    <description>Recent content in Framework on MyWebsite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/framework/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới Thiệu Các JavaScript Framework Phổ Biến</title>
+      <link>http://localhost:1313/posts/javascriptframework/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/javascriptframework/</guid>
+      <description>&lt;p&gt;Khi phát triển ứng dụng web, việc lựa chọn một JavaScript framework phù hợp có thể giúp bạn tiết kiệm thời gian và công sức. Các framework này cung cấp một bộ công cụ, thư viện và quy ước để xây dựng các ứng dụng phức tạp với ít mã nguồn hơn, đồng thời đảm bảo mã dễ duy trì và mở rộng.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

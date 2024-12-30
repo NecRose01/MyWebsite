@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Câu Lệnh If-Else on MyWebsite</title>
+    <link>http://localhost:1313/tags/c%C3%A2u-l%E1%BB%87nh-if-else/</link>
+    <description>Recent content in Câu Lệnh If-Else on MyWebsite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/c%C3%A2u-l%E1%BB%87nh-if-else/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Câu Lệnh If-Else Trong Java</title>
+      <link>http://localhost:1313/posts/if-else-loop/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/if-else-loop/</guid>
+      <description>&lt;p&gt;Trong Java, câu lệnh &lt;code&gt;if-else&lt;/code&gt; là một cấu trúc điều kiện phổ biến, cho phép thực thi mã dựa trên kết quả của một điều kiện logic.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

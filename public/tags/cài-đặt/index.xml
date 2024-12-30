@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cài Đặt on MyWebsite</title>
+    <link>http://localhost:1313/tags/c%C3%A0i-%C4%91%E1%BA%B7t/</link>
+    <description>Recent content in Cài Đặt on MyWebsite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/c%C3%A0i-%C4%91%E1%BA%B7t/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cách Cài Java và JavaScript</title>
+      <link>http://localhost:1313/posts/cachcaidatjavajavascript/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/cachcaidatjavajavascript/</guid>
+      <description>&lt;p&gt;Để bắt đầu lập trình với &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt;, bạn cần cài đặt các công cụ cần thiết. Dưới đây là hướng dẫn chi tiết về cách cài đặt Java và JavaScript trên các hệ điều hành phổ biến: Windows, macOS và Linux.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

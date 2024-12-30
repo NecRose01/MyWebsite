@@ -16,23 +16,26 @@
 
 
 <!DOCTYPE html>
-<html lang='en-us'><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang='en'><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <link rel="shortcut icon" href='http://localhost:1313/favicon.ico' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Posts - My New Hugo Site</title>
+    <title>Posts - MyWebsite</title>
 
     
 
     
 
+    
+    <meta name="author" content="Hugo Authors" />
     
 
     
         <meta property="og:url" content="http://localhost:1313/posts/">
-  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:site_name" content="MyWebsite">
   <meta property="og:title" content="Posts">
-  <meta property="og:locale" content="en_us">
+  <meta property="og:description" content="1 số bài đăng về java và javascript">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
     
@@ -41,6 +44,7 @@
         
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Posts">
+  <meta name="twitter:description" content="1 số bài đăng về java và javascript">
 
     <link rel="stylesheet" href="/style.css" integrity="">
 
@@ -74,10 +78,15 @@
 
 
 
+    
+    
+    
+    <script defer src="/js/search-en.js" integrity=""></script>
 
 
 
 
+<link rel="stylesheet" href="http://localhost:1313/user.css">
 
     
 </head>
@@ -101,13 +110,14 @@
                 <div id="sidebar_canvas_overlay"></div>
             </label>
             <div id="sidebar">
-                <ul></ul>
+                <ul><li>
+                            <a href="/posts/">Posts</a></li></ul>
             </div>
         </div>
     
         <div class="brand">
             <div>
-                <a href="/">My New Hugo Site</a>
+                <a href="/">MyHome</a>
             </div>
         </div>
     </div>
@@ -137,36 +147,259 @@
         </div>
 
         
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>
 
+</svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+
+</svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn" onclick="void(0)">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+</svg>
+
+</svg>
+                            <span class="dropdown-desc">English</span>
+                        </div>
+                        <ul class="pure-menu-children">
+                            
+                            <li class="pure-menu-item">
+                                <a href="http://localhost:1313/" class="pure-menu-link">English</a>
+                            </li>
+                            
+                            <li class="pure-menu-item">
+                                <a href="http://localhost:1313/zh-tw/" class="pure-menu-link">正體中文</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         
     </div>
 </header>
 <nav id="navbar" class="pure-menu">
-    <ul class="pure-menu-list"></ul>
+    <ul class="pure-menu-list"><li class="navbar-item pure-menu-item active">
+                    
+                        <a href="/posts/" class="pure-menu-link">Posts</a>
+                    
+                </li></ul>
 </nav>
 <main>
             <div id="content" class="content-margin">
                 
 
 
-    
-        <div class="content-margin">
-            <h1>2024</h1>
+    <div class="content-margin">
 
-<ul class="list-layout">
-    
-        <li>
-            <a href="/posts/myfirstpost/">Myfirstpost</a>
-            
-                <span>
-                    12/30
-                </span>
-            
-        </li>
-    
-</ul></div>
+
+
+<article >
     
     
+        
+        
+    
+    <p>1 số bài đăng về java và javascript</p>
+
+</article>
+</div>
+
+
+
+
+
+<div class="postcard-layout content-margin">
+    
+        <a href="http://localhost:1313/posts/variable-in-java/">
+            <div class="postcard-item">
+                <div class="postcard-title">
+                    <span>Các Biến Thường Được Sử Dụng Trong Java</span>
+                </div>
+                <div class="postcard-summary">
+                    <span>Trong lập trình Java, biến là một yếu tố quan trọng giúp lưu trữ và quản lý dữ liệu. Bài viết này sẽ giới thiệu các loại biến thường được sử dụng trong Java và cách sử dụng chúng.
+1. Biến Cục Bộ (Local Variable) Định nghĩa: Là biến được khai báo bên trong một phương thức, khối mã, hoặc constructor. Chỉ có thể được sử dụng trong phạm vi của khối hoặc phương thức mà nó được khai báo. Ví dụ: public class LocalVariableExample { public void displayMessage() { int number = 10; // Biến cục bộ System.out.println(&quot;Số: &quot; + number); } } Lưu ý: Biến cục bộ phải được khởi tạo trước khi sử dụng. Chúng không có giá trị mặc định. 2. Biến Thành Viên (Instance Variable) Định nghĩa: Là biến được khai báo bên ngoài các phương thức nhưng bên trong một lớp. Biến này thuộc về một đối tượng cụ thể của lớp. Ví dụ: public class InstanceVariableExample { String name; // Biến thành viên public void displayName() { System.out.println(&quot;Tên: &quot; + name); } } Lưu ý: Biến thành viên có giá trị mặc định (ví dụ: null cho kiểu chuỗi, 0 cho kiểu số). Chúng tồn tại miễn là đối tượng của lớp còn tồn tại. 3. Biến Tĩnh (Static Variable) Định nghĩa: Là biến được khai báo với từ khóa static trong lớp. Biến tĩnh là thuộc tính chung của tất cả các đối tượng trong lớp (chia sẻ giá trị giữa các đối tượng). Ví dụ: public class StaticVariableExample { static int count = 0; // Biến tĩnh public StaticVariableExample() { count++; } public static void displayCount() { System.out.println(&quot;Số lượng đối tượng: &quot; + count); } } Lưu ý: Biến tĩnh được khởi tạo một lần và được lưu trữ trong bộ nhớ tĩnh (static memory). Có thể truy cập trực tiếp bằng tên lớp mà không cần tạo đối tượng. 4. Biến Hằng (Final Variable) Định nghĩa: Là biến được khai báo với từ khóa final, giá trị của nó không thể thay đổi sau khi khởi tạo. Ví dụ: public class FinalVariableExample { final int MAX_VALUE = 100; // Biến hằng public void displayMaxValue() { System.out.println(&quot;Giá trị tối đa: &quot; + MAX_VALUE); } } Lưu ý: Biến final phải được khởi tạo ngay khi khai báo hoặc trong constructor. Giá trị của biến này không thể bị thay đổi. 5. Biến Truyền Vào Phương Thức (Parameter Variable) Định nghĩa: Là biến được khai báo trong danh sách tham số của phương thức. Biến này được sử dụng để nhận giá trị truyền vào khi gọi phương thức. Ví dụ: public class ParameterVariableExample { public void printMessage(String message) { // Biến truyền vào System.out.println(&quot;Thông điệp: &quot; + message); } } Lưu ý: Giá trị của biến tham số được truyền từ đối số khi gọi phương thức. Kết luận Biến là công cụ quan trọng để lưu trữ dữ liệu trong Java. Hiểu rõ các loại biến như biến cục bộ, biến thành viên, biến tĩnh, biến hằng, và biến tham số sẽ giúp bạn quản lý dữ liệu hiệu quả và viết mã nguồn dễ bảo trì hơn. Hãy thực hành nhiều để làm quen với cách sử dụng các loại biến này!
+</span>
+                </div>
+                <div class="postcard-metadata">
+                    <span>2024/12/30 · 
+    
+        
+    
+
+    
+        
+            <span>Posts</span>
+        
+    
+</span>
+                </div>
+            </div>
+        </a>
+    
+        <a href="http://localhost:1313/posts/variable-in-javascript/">
+            <div class="postcard-item">
+                <div class="postcard-title">
+                    <span>Các Phương Thức Cơ Bản Trong JavaScript</span>
+                </div>
+                <div class="postcard-summary">
+                    <span>JavaScript cung cấp rất nhiều phương thức để thao tác với các kiểu dữ liệu khác nhau, từ chuỗi, mảng đến đối tượng. Việc nắm vững các phương thức cơ bản sẽ giúp bạn viết mã nhanh chóng và hiệu quả hơn.
+</span>
+                </div>
+                <div class="postcard-metadata">
+                    <span>2024/12/30 · 
+    
+        
+    
+
+    
+        
+            <span>Posts</span>
+        
+    
+</span>
+                </div>
+            </div>
+        </a>
+    
+        <a href="http://localhost:1313/posts/cachcaidatjavajavascript/">
+            <div class="postcard-item">
+                <div class="postcard-title">
+                    <span>Cách Cài Java và JavaScript</span>
+                </div>
+                <div class="postcard-summary">
+                    <span>Để bắt đầu lập trình với Java và JavaScript, bạn cần cài đặt các công cụ cần thiết. Dưới đây là hướng dẫn chi tiết về cách cài đặt Java và JavaScript trên các hệ điều hành phổ biến: Windows, macOS và Linux.
+</span>
+                </div>
+                <div class="postcard-metadata">
+                    <span>2024/12/30 · 
+    
+        
+    
+
+    
+        
+            <span>Posts</span>
+        
+    
+</span>
+                </div>
+            </div>
+        </a>
+    
+        <a href="http://localhost:1313/posts/if-else-loop/">
+            <div class="postcard-item">
+                <div class="postcard-title">
+                    <span>Câu Lệnh If-Else Trong Java</span>
+                </div>
+                <div class="postcard-summary">
+                    <span>Trong Java, câu lệnh if-else là một cấu trúc điều kiện phổ biến, cho phép thực thi mã dựa trên kết quả của một điều kiện logic.
+</span>
+                </div>
+                <div class="postcard-metadata">
+                    <span>2024/12/30 · 
+    
+        
+    
+
+    
+        
+            <span>Posts</span>
+        
+    
+</span>
+                </div>
+            </div>
+        </a>
+    
+        <a href="http://localhost:1313/posts/javascriptframework/">
+            <div class="postcard-item">
+                <div class="postcard-title">
+                    <span>Giới Thiệu Các JavaScript Framework Phổ Biến</span>
+                </div>
+                <div class="postcard-summary">
+                    <span>Khi phát triển ứng dụng web, việc lựa chọn một JavaScript framework phù hợp có thể giúp bạn tiết kiệm thời gian và công sức. Các framework này cung cấp một bộ công cụ, thư viện và quy ước để xây dựng các ứng dụng phức tạp với ít mã nguồn hơn, đồng thời đảm bảo mã dễ duy trì và mở rộng.
+</span>
+                </div>
+                <div class="postcard-metadata">
+                    <span>2024/12/30 · 
+    
+        
+    
+
+    
+        
+            <span>Posts</span>
+        
+    
+</span>
+                </div>
+            </div>
+        </a>
+    
+    
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/posts/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+</div>
+
+
 
 
 
@@ -178,5 +411,9 @@
                 
             </div>
         </main>
+<footer>
+    <article>Copyright © 2021-2024 by kaiiiz</article>
+</footer>
+
 </body>
 </html>

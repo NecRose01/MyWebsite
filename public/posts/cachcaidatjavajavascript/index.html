@@ -1,0 +1,594 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='en'><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='http://localhost:1313/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cách Cài Java và JavaScript - MyWebsite</title>
+
+    
+    <meta name="description" content="Hướng dẫn chi tiết cách cài đặt Java và JavaScript trên hệ điều hành Windows, macOS và Linux." />
+    
+
+    
+
+    
+    <meta name="author" content="Hugo Authors" />
+    
+
+    
+        <meta property="og:url" content="http://localhost:1313/posts/cachcaidatjavajavascript/">
+  <meta property="og:site_name" content="MyWebsite">
+  <meta property="og:title" content="Cách Cài Java và JavaScript">
+  <meta property="og:description" content="Hướng dẫn chi tiết cách cài đặt Java và JavaScript trên hệ điều hành Windows, macOS và Linux.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-30T00:00:00+00:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="Cài Đặt">
+    <meta property="article:tag" content="Lập Trình">
+
+    
+
+    
+        
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cách Cài Java và JavaScript">
+  <meta name="twitter:description" content="Hướng dẫn chi tiết cách cài đặt Java và JavaScript trên hệ điều hành Windows, macOS và Linux.">
+
+    <link rel="stylesheet" href="/style.css" integrity="">
+
+
+
+    <link rel="stylesheet" href="/lib/css/prism.css" integrity="">
+
+
+
+    
+    <script>
+        if (!('theme' in localStorage)) {
+            localStorage.theme = 'light';
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/js/header.js" integrity=""></script>
+
+
+
+    <script defer src="/js/zooming.js" integrity=""></script>
+
+
+
+
+
+
+
+    
+        
+
+        
+        
+
+        
+        
+            
+        
+
+        <script defer src="/js/prism.js" integrity="" data-manual></script>
+    
+
+
+
+    
+    
+    
+    <script defer src="/js/search-en.js" integrity=""></script>
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/user.css">
+
+    
+</head>
+<body><header>
+    <div id="header_left">
+        <div id="sidebar_btn">
+            <input type="checkbox" id="sidebar_btn_input" class="hidden" />
+            <label id="sidebar_btn_label" for="sidebar_btn_input">
+                <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+</svg>
+
+</svg>
+            </label>
+            <label id="sidebar_canvas_overlay_wrapper" for="sidebar_btn_input">
+                <div id="sidebar_canvas_overlay"></div>
+            </label>
+            <div id="sidebar">
+                <ul><li>
+                            <a href="/posts/">Posts</a></li></ul>
+            </div>
+        </div>
+    
+        <div class="brand">
+            <div>
+                <a href="/">MyHome</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+</svg>
+
+</svg>
+            <svg id="light_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+
+</svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>
+
+</svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+
+</svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn" onclick="void(0)">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+</svg>
+
+</svg>
+                            <span class="dropdown-desc">English</span>
+                        </div>
+                        <ul class="pure-menu-children">
+                            
+                            <li class="pure-menu-item">
+                                <a href="http://localhost:1313/" class="pure-menu-link">English</a>
+                            </li>
+                            
+                            <li class="pure-menu-item">
+                                <a href="http://localhost:1313/zh-tw/" class="pure-menu-link">正體中文</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu">
+    <ul class="pure-menu-list"><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="/posts/" class="pure-menu-link">Posts</a>
+                    
+                </li></ul>
+</nav>
+<main>
+            <div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-cài-đặt-java">1. Cài Đặt Java</a></li>
+        <li><a href="#2-cài-đặt-javascript">2. Cài Đặt JavaScript</a></li>
+        <li><a href="#cài-đặt-javascript-nodejs-trên-macos">Cài Đặt JavaScript (Node.js) trên macOS</a></li>
+        <li><a href="#cài-đặt-javascript-nodejs-trên-linux">Cài Đặt JavaScript (Node.js) trên Linux</a></li>
+        <li><a href="#3-cài-đặt-trình-biên-dịch-ide-cho-java-và-javascript">3. Cài Đặt Trình Biên Dịch (IDE) cho Java và JavaScript</a></li>
+      </ul>
+    </li>
+    <li><a href="#kết-luận">Kết luận</a></li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+
+
+<article >
+    
+    
+        
+        
+    
+    <p>Để bắt đầu lập trình với <strong>Java</strong> và <strong>JavaScript</strong>, bạn cần cài đặt các công cụ cần thiết. Dưới đây là hướng dẫn chi tiết về cách cài đặt Java và JavaScript trên các hệ điều hành phổ biến: Windows, macOS và Linux.</p>
+
+<h3 id="1-cài-đặt-java" class="header-anchor-wrapper">1. Cài Đặt Java
+  <a href="#1-c%c3%a0i-%c4%91%e1%ba%b7t-java" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>Java là một ngôn ngữ lập trình phổ biến được sử dụng rộng rãi trong phát triển ứng dụng, đặc biệt là ứng dụng web và di động. Để cài đặt Java, bạn cần cài đặt <strong>Java Development Kit (JDK)</strong>.</p>
+
+<h4 id="cài-đặt-java-trên-windows" class="header-anchor-wrapper">Cài Đặt Java trên Windows
+  <a href="#c%c3%a0i-%c4%91%e1%ba%b7t-java-tr%c3%aan-windows" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<ol>
+<li>
+<p>Truy cập trang web chính thức của Oracle để tải JDK:</p>
+<ul>
+<li>Link: <a href="https://www.oracle.com/java/technologies/javase-jdk14-downloads.html">Download JDK</a></li>
+</ul>
+</li>
+<li>
+<p>Tải về phiên bản JDK mới nhất phù hợp với hệ điều hành Windows của bạn (32-bit hoặc 64-bit).</p>
+</li>
+<li>
+<p>Chạy tệp cài đặt và làm theo hướng dẫn trên màn hình.</p>
+</li>
+<li>
+<p>Sau khi cài đặt, bạn cần cấu hình <strong>JAVA_HOME</strong> và thêm Java vào biến môi trường <code>PATH</code>:</p>
+<ul>
+<li>Vào <strong>Control Panel &gt; System and Security &gt; System &gt; Advanced System Settings</strong>.</li>
+<li>Chọn <strong>Environment Variables</strong>.</li>
+<li>Trong phần <strong>System variables</strong>, nhấn <strong>New</strong> và thêm <code>JAVA_HOME</code> với giá trị là thư mục cài đặt JDK (ví dụ: <code>C:\Program Files\Java\jdk-14</code>).</li>
+<li>Chỉnh sửa biến <code>Path</code> và thêm đường dẫn tới thư mục <code>bin</code> của JDK (ví dụ: <code>C:\Program Files\Java\jdk-14\bin</code>).</li>
+</ul>
+</li>
+<li>
+<p>Kiểm tra cài đặt Java bằng cách mở Command Prompt và gõ:</p>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">java -version
+</code></pre>
+</li>
+</ol>
+<p>Nếu cài đặt thành công, bạn sẽ thấy thông tin phiên bản Java.</p>
+
+<h4 id="cài-đặt-java-trên-macos" class="header-anchor-wrapper">Cài Đặt Java trên macOS
+  <a href="#c%c3%a0i-%c4%91%e1%ba%b7t-java-tr%c3%aan-macos" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<ol>
+<li>Truy cập trang web Oracle để tải JDK hoặc cài đặt qua Homebrew:</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">brew install openjdk@17
+</code></pre>
+<ol start="2">
+<li>Đặt biến môi trường JAVA_HOME bằng cách thêm dòng sau vào file ~/.bash_profile hoặc ~/.zshrc:</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+</code></pre>
+<ol start="3">
+<li>Kiểm tra cài đặt bằng lệnh:</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">java -version
+</code></pre>
+
+<h4 id="cài-đặt-java-trên-linux" class="header-anchor-wrapper">Cài Đặt Java trên Linux
+  <a href="#c%c3%a0i-%c4%91%e1%ba%b7t-java-tr%c3%aan-linux" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<ol>
+<li>Mở Terminal và sử dụng lệnh sau để cài đặt OpenJDK:</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">sudo apt update
+sudo apt install openjdk-17-jdk
+</code></pre>
+<ol start="2">
+<li>Kiểm tra cài đặt bằng lệnh:</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">java -version
+</code></pre>
+
+<h3 id="2-cài-đặt-javascript" class="header-anchor-wrapper">2. Cài Đặt JavaScript
+  <a href="#2-c%c3%a0i-%c4%91%e1%ba%b7t-javascript" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>JavaScript là ngôn ngữ kịch bản phổ biến được sử dụng trong phát triển web. Để bắt đầu viết JavaScript, bạn không cần phải cài đặt một công cụ biên dịch như Java. Tuy nhiên, bạn cần cài đặt Node.js nếu muốn chạy JavaScript trên máy tính của mình thay vì chỉ chạy trên trình duyệt.</p>
+<p><strong>Cài Đặt JavaScript (Node.js) trên Windows</strong></p>
+<ol>
+<li>Truy cập trang web chính thức của Node.js:</li>
+</ol>
+<ul>
+<li>Link: <a href="https://nodejs.org/fr">Download Node.js</a></li>
+</ul>
+<ol start="2">
+<li>
+<p>Tải về phiên bản LTS (Long-Term Support) của Node.js cho Windows.</p>
+</li>
+<li>
+<p>Chạy tệp cài đặt và làm theo hướng dẫn trên màn hình.</p>
+</li>
+<li>
+<p>Kiểm tra cài đặt bằng cách mở Command Prompt và gõ:</p>
+</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">node -v
+</code></pre>
+<p>Nếu cài đặt thành công, bạn sẽ thấy phiên bản Node.js.</p>
+
+<h3 id="cài-đặt-javascript-nodejs-trên-macos" class="header-anchor-wrapper">Cài Đặt JavaScript (Node.js) trên macOS
+  <a href="#c%c3%a0i-%c4%91%e1%ba%b7t-javascript-nodejs-tr%c3%aan-macos" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<ol>
+<li>Cài đặt Homebrew (nếu chưa cài):</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre>
+<ol start="2">
+<li>Cài đặt Node.js qua Homebrew:</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">brew install node
+</code></pre>
+<ol start="3">
+<li>Kiểm tra cài đặt bằng cách chạy lệnh:</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">node -v
+</code></pre>
+
+<h3 id="cài-đặt-javascript-nodejs-trên-linux" class="header-anchor-wrapper">Cài Đặt JavaScript (Node.js) trên Linux
+  <a href="#c%c3%a0i-%c4%91%e1%ba%b7t-javascript-nodejs-tr%c3%aan-linux" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<ol>
+<li>Cài đặt Node.js từ NodeSource repository:</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install -y nodejs
+</code></pre>
+<ol start="2">
+<li>Kiểm tra cài đặt bằng lệnh:</li>
+</ol>
+<pre  class="mc-prism hide language-text" ><code class="language-bash">node -v
+</code></pre>
+
+<h3 id="3-cài-đặt-trình-biên-dịch-ide-cho-java-và-javascript" class="header-anchor-wrapper">3. Cài Đặt Trình Biên Dịch (IDE) cho Java và JavaScript
+  <a href="#3-c%c3%a0i-%c4%91%e1%ba%b7t-tr%c3%acnh-bi%c3%aan-d%e1%bb%8bch-ide-cho-java-v%c3%a0-javascript" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>Để lập trình hiệu quả hơn, bạn cần cài đặt một IDE (Integrated Development Environment) hoặc Text Editor hỗ trợ cả Java và JavaScript.</p>
+
+<h4 id="ide-cho-java" class="header-anchor-wrapper">IDE cho Java
+  <a href="#ide-cho-java" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<ul>
+<li>IntelliJ IDEA: Một IDE mạnh mẽ cho Java với nhiều tính năng hỗ trợ phát triển ứng dụng Java. Link tải: IntelliJ IDEA</li>
+<li>Eclipse: Một IDE phổ biến cho phát triển Java. Link tải: Eclipse IDE</li>
+</ul>
+
+<h4 id="ide-cho-javascript" class="header-anchor-wrapper">IDE cho JavaScript
+  <a href="#ide-cho-javascript" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h4>
+
+<ul>
+<li>Visual Studio Code: Một text editor mạnh mẽ cho JavaScript và nhiều ngôn ngữ khác. Link tải: VS Code</li>
+<li>WebStorm: Một IDE chuyên dụng cho JavaScript, HTML và CSS. Link tải: WebStorm</li>
+</ul>
+
+<h2 id="kết-luận" class="header-anchor-wrapper">Kết luận
+  <a href="#k%e1%ba%bft-lu%e1%ba%adn" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+<p>Với Java, bạn cần cài đặt JDK và cấu hình môi trường để có thể lập trình, trong khi JavaScript chỉ cần cài đặt Node.js để chạy mã JavaScript ngoài trình duyệt. Hãy cài đặt các công cụ và IDE phù hợp để tạo ra một môi trường lập trình hiệu quả. Chúc bạn lập trình thành công!</p>
+</article>
+</div>
+
+
+                
+                    
+                
+
+                
+            </div>
+        </main>
+<footer>
+    <article>Copyright © 2021-2024 by kaiiiz</article>
+</footer>
+
+</body>
+</html>
